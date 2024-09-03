@@ -1,9 +1,14 @@
 // import React from 'react'
+import image from "../images/heoImg.jpeg";
 
 const HomePage = () => {
   return (
-    <div className="">HomePage</div>
-  )
-}
+    <div className="grid grid-cols-2">
+      <div></div>
 
-export default HomePage
+      <img className="rounded-lg" src={image} alt="Hero" />
+    </div>
+  );
+};
+
+export default HomePage;
