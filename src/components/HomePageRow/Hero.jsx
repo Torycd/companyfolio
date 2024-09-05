@@ -4,12 +4,12 @@ import Button from "../Button/Button";
 
 const Hero = () => {
   return (
-    <div className="flex items-center text-center sm:text-left">
+    <div className="flex items-center text-center md:text-left">
       <div className="space-y-4">
         <h2 className="text-blue-800 uppercase font-medium">
           about Pen & Pixel
         </h2>
-        <div className="text-gray-800 font-bold text-3xl  sm:text-6xl space-y-2">
+        <div className="text-gray-800 font-bold text-3xl  md:text-6xl space-y-2">
           <h2>We are a modern</h2>
           <h2>design agency.</h2>
         </div>
