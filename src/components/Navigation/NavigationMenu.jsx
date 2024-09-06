@@ -14,11 +14,11 @@ const NavigationMenu = () => {
     <div>
       <div className="">
         <div className="flex justify-between">
-          <div className="font-bold text-xl flex items-center gap-1 mt-4">
+          <div className="font-bold text-xl flex items-center gap-1">
             <div className="bg-blue-800 text-white p-1 rounded-md">Pp</div>
             <h2 className="">Pen & Pixel</h2>
           </div>
-          <div className="hidden md:flex gap-4 text-gray-700 mt-10">
+          <div className="hidden md:flex gap-4 text-gray-700">
             <ul className="flex items-center gap-2">
               <li className={navClass}>About</li>
               <li className={navClass}>Blog</li>
@@ -31,7 +31,7 @@ const NavigationMenu = () => {
           {/* mobile menu */}
 
           <div
-            className=" text-blue-800 flex justify-center mt-10 z-50 items-center md:hidden relative"
+            className=" text-blue-800 flex justify-center z-50 items-center md:hidden relative"
             onClick={handleNav}
           >
             {!nav ? <AiOutlineMenu size={25} /> : <AiOutlineClose size={25} />}
