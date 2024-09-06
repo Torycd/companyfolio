@@ -1,6 +1,25 @@
-// import React from 'react'
+import React from "react";
+import { FaHeadset, FaShieldVirus, FaPeopleArrows } from "react-icons/fa";
 
 const Values = () => {
+  const VALUES = [
+    {
+      title: "24/7 Support",
+      info: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport",
+      icon: FaHeadset,
+    },
+    {
+      title: "Strong Teams",
+      info: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport",
+      icon: FaShieldVirus,
+    },
+    {
+      title: "Customer Satisfaction",
+      info: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport",
+      icon: FaPeopleArrows,
+    },
+  ];
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen text-center">
       <div className="space-y-4 mb-24">
@@ -15,16 +34,23 @@ const Values = () => {
         </p>
       </div>
       <div className="grid md:grid-cols-3 px-10">
-        <div className="space-y-4">
-          <div className="flex justify-center">
-            <div className="rounded-full bg-gray-200 p-5">emj</div>
+        {/* value */}
+        {VALUES.map((stat) => (
+          <div
+            className="space-y-4 hover:scale-105 transition-all ease-in-out duration-500"
+            key={stat.title}
+          >
+            <div className="flex justify-center">
+              <div className="rounded-full bg-gray-200 p-5 text-blue-800">
+                {React.createElement(stat.icon, { size: 25 })}
+              </div>
+            </div>
+            <h2 className="font-bold text-2xl text-gray-700">{stat.title}</h2>
+            <p className="text-wrap text-xl text-gray-700 font-medium">
+              {stat.info}
+            </p>
           </div>
-          <h2 className="font-bold text-2xl text-gray-700" >24/7 Support</h2>
-          <p className="text-wrap text-xl text-gray-700 font-medium">
-            Lorem ipsum donor amet siti ceali placeholder text alipiscing elit
-            sed do eiusmod temport
-          </p>
-        </div>
+        ))}
       </div>
     </div>
   );
