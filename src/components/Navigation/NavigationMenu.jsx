@@ -14,7 +14,7 @@ const NavigationMenu = () => {
     <div>
       <div className="">
         <div className="flex justify-between">
-          <div className="font-bold text-xl flex items-center gap-1 mt-10">
+          <div className="font-bold text-xl flex items-center gap-1 mt-4">
             <div className="bg-blue-800 text-white p-1 rounded-md">Pp</div>
             <h2 className="">Pen & Pixel</h2>
           </div>
