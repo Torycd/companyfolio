@@ -1,5 +1,5 @@
 // import React from 'react'
-
+import Animation from "../components/Helpers/Animation"
 import Hero from "../components/HomePageRow/Hero";
 import Values from "../components/HomePageRow/Values";
 import Vision from "../components/HomePageRow/Vision";
@@ -8,11 +8,11 @@ import Vision from "../components/HomePageRow/Vision";
 const HomePage = () => {
  
   return (
-    <div className="space-y-10">
+    <Animation>
       <Hero/>
       <Vision />
       <Values/>
-    </div>
+    </Animation>
   );
 };
 
