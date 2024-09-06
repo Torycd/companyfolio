@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import NavigationMenu from "./components/Navigation/NavigationMenu";
+import Footer from "./components/Footer/Footer";
 
 const MainLandingPage = () => {
   return (
@@ -10,6 +11,7 @@ const MainLandingPage = () => {
       <div className="lg:px-64 md:px-24 sm:px-10 px-4">
         <Outlet />
       </div>
+      <Footer/>
     </div>
   );
 };
