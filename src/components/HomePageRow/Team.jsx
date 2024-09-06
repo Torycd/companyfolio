@@ -1,4 +1,5 @@
 // import React from 'react'
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Team = () => {
   const CARD = [
@@ -60,9 +61,9 @@ const Team = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen text-center">
       <div className="space-y-4 mb-24">
-        <h2 className="text-blue-800 uppercase font-medium">Our Values</h2>
+        <h2 className="text-blue-800 uppercase font-medium">Our Team</h2>
         <div className="text-gray-800 font-bold text-3xl  md:text-6xl space-y-2">
-          <h2 className="text-wrap">We follow these.</h2>
+          <h2 className="text-wrap">Meet These Fine Folks.</h2>
         </div>
         <p className="font-medium md:text-xl text-gray-500 text-wrap">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -70,8 +71,25 @@ const Team = () => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
-      <div className="grid md:grid-cols-3">
-        <div></div>
+      <div className="grid md:grid-cols-3 gap-10 md:gap-20">
+        {CARD.map((det) => (
+          <div className="flex flex-col gap-2" key={det.name}>
+            <img src={det.imageSrc} className="w-64 h-64 " alt={det.name} />
+            <h2 className="text-blue-800 uppercase font-medium">{det.position}</h2>
+            <h2 className="font-semibold text-xl mb-5">{det.name}</h2>
+            <div className="flex justify-around">
+              <a href={det.twitter} className="text-gray-400 hover:text-blue-800 transition-all ease-in-out duration-500">
+                <FaTwitter size={20} />
+              </a>
+              <a href={det.LinkedIn} className="text-gray-400 hover:text-blue-800">
+                <FaLinkedin size={20} />
+              </a>
+              <a href={det.GitHub} className="text-gray-400 hover:text-blue-800">
+                <FaGithub size={20} />
+              </a>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

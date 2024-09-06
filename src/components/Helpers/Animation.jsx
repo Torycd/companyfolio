@@ -43,7 +43,7 @@ function AnimatedSlideInComponent({ direction = "left", offset = 30, children })
 }
 
 const MyComponent = (props) => (
-  <div className="space-y-4">
+  <div className="space-y-4 overflow-hidden">
     <AnimationReveal {...props} />
   </div>
 );
