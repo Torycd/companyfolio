@@ -12,6 +12,18 @@ function App() {
         {
           path: "/",
           element: <AboutPage/>
+        },
+        {
+          path: "/Blog",
+          element: <AboutPage/>
+        },
+        {
+          path: "/Pricing",
+          element: <AboutPage/>
+        },
+        {
+          path: "/Contact",
+          element: <AboutPage/>
         }
       ]
     }
