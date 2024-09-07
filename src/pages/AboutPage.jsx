@@ -6,7 +6,7 @@ import Values from "../components/HomePageRow/Values";
 import Vision from "../components/HomePageRow/Vision";
 
 
-const HomePage = () => {
+const AboutPage = () => {
  
   return (
     <Animation>
@@ -18,4 +18,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default AboutPage;

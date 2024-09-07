@@ -14,7 +14,7 @@ const Hero = () => {
     <div className="grid md:grid-cols-2 h-screen grid-cols-1 md:gap-20 ">
         <Detail  btn={btn} heading={heading} title={title} Content={Content}  />
         <img
-          className="rounded-lg mt-20 md:mt-0 flex self-center order-first md:order-last"
+          className="rounded-lg mt-20 sm:mt-0 flex self-center order-first md:order-last"
           src={image}
           alt="Hero"
         />

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import Button from "../Button/Button";
@@ -10,6 +11,8 @@ const NavigationMenu = () => {
   };
   const navClass =
     "transition duration-300 font-medium mr-2 lg:mr-5 border-b-2 border-white   hover:border-gray-700";
+  const activeClass =
+    "transition duration-300 font-medium mr-2 lg:mr-5 border-b-2 border-gray-700";
   return (
     <div>
       <div className="">
@@ -20,11 +23,43 @@ const NavigationMenu = () => {
           </div>
           <div className="hidden lg:flex gap-1 lg:gap-4 text-gray-700">
             <ul className="flex items-center gap-1 lg:gap-2">
-              <li className={navClass}>About</li>
-              <li className={navClass}>Blog</li>
-              <li className={navClass}>Pricing</li>
-              <li className={navClass}>Contact Us</li>
-              <li className={`ml-1 lg:ml-16 ${navClass}`}>Login</li>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? activeClass : navClass
+                }
+                to="/"
+                end
+              >
+                <li>About</li>
+              </NavLink>
+              <NavLink
+                to="/Blog"
+                className={({ isActive }) =>
+                  isActive ? activeClass : navClass
+                }
+              >
+                <li>Blog</li>
+              </NavLink>
+              <NavLink
+                to="/Pricing"
+                className={({ isActive }) =>
+                  isActive ? activeClass : navClass
+                }
+              >
+                <li>Pricing</li>
+              </NavLink>
+              <NavLink
+                to="/Contact"
+                className={({ isActive }) =>
+                  isActive ? activeClass : navClass
+                }
+              >
+                <li>Contact Us</li>
+              </NavLink>
+
+              <Link to="/Login" className={`ml-1 lg:ml-16 ${navClass}`}>
+                Login
+              </Link>
             </ul>
             <Button>Sign Up</Button>
           </div>

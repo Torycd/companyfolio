@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainLandingPage from "./MainLandingPage";
-import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
 
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       children: [
         {
           path: "/",
-          element: <HomePage/>
+          element: <AboutPage/>
         }
       ]
     }
