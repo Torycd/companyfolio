@@ -1,13 +1,13 @@
 // import React from 'react'
 
 const Footer = () => {
-  const footHeder = "font-bold text-xl mb-5";
+  const footHeder = "font-bold md:text-xl mb-5";
   const footNav =
     "transition ease-in-out duration-500 underline-offset-4 text-gray-500 hover:underline font-medium";
   return (
     <div className="mt-20 bg-blue-100 lg:px-64 md:px-24 sm:px-10 px-4 py-20 text-gray-500">
       <div className="flex flex-col md:flex-row md:justify-between md:gap-10">
-        <div className="grid md:grid-cols-4 gap-20 text-gray-700">
+        <div className="flex flex-wrap justify-center items-center text-center md:text-left  gap-5 md:gap-20 text-gray-700">
           <div>
             <h2 className={footHeder}>Main</h2>
             <ul className="flex flex-col gap-2">
@@ -15,7 +15,7 @@ const Footer = () => {
               <li className={footNav}>FAQs</li>
               <li className={footNav}>Support</li>
               <li className={footNav}>About Us</li>
-            </ul>
+            </ul> 
           </div>
           <div>
             <h2 className={footHeder}>Product</h2>
@@ -35,7 +35,7 @@ const Footer = () => {
               <li className={footNav}>Office</li>
             </ul>
           </div>
-          <div>
+          <div className="self-center">
             <h2 className={footHeder}>Legal</h2>
             <ul className="flex flex-col gap-2">
               <li className={footNav}>GDPR</li>
@@ -55,7 +55,7 @@ const Footer = () => {
           </p>
           <div className="w-full h-12 flex">
             <input
-              placeholder="Hello"
+              placeholder="Your Email Address"
               className="h-full w-[65%] px-4 border border-gray-300 rounded-tl-lg rounded-bl-lg focus:outline focus:outline-blue-700 focus:outline-2"
             />
             <button className="h-full w-[35%] rounded-br-lg rounded-tr-lg text-white bg-blue-700 hover:bg-blue-800 transition duration-300">
