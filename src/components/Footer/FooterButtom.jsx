@@ -6,7 +6,7 @@ const FooterButtom = () => {
     <div className="flex flex-col items-center gap-5 md:gap-0 md:flex-row justify-between border-t">
       <div className="font-bold text-xl flex items-center gap-1">
         <div className="bg-blue-800 text-white p-1 rounded-md">Pp</div>
-        <h2 className="">Pen & Pixel Inc.</h2>
+        <h2>Pen & Pixel Inc.</h2>
       </div>
       <div>
         <p>© 2024 Pen & Pixel Inc. All Rights Reserved.</p>
