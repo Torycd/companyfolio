@@ -29,6 +29,10 @@ function App() {
         },
       ],
     },
+    {
+      path: "/Login",
+      element: <AboutPage />,
+    },
   ]);
   return <RouterProvider router={router} />;
 }
