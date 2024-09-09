@@ -9,7 +9,6 @@ const Detail = ({title, heading, Content, btn}) => {
       </h2>
       <div className="text-gray-800 font-bold text-xl xl:text-6xl  md:text-xl space-y-2">
         <h2 className="text-wrap">{heading}</h2>
-      
       </div>
       <p className="font-medium text-gray-500">
         {Content}
