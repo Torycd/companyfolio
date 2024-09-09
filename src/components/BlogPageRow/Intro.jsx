@@ -6,8 +6,8 @@ const Intro = () => {
     <div className="mt-28 md:mt-40">
       <h2 className="text-4xl md:text-6xl my-20 font-bold">Blog Post</h2>
       <div className="md:group flex flex-col  md:flex-row bg-gray-100 rounded-lg">
-        <img className="max-h-96 rounded-t-lg md:rounded-t-none md:rounded-bl-lg" src={intro} alt="vlog" />
-        <div className="flex flex-col space-y-4 p-8">
+        <img className="max-h-96 md:w-[70%] rounded-t-lg md:rounded-t-none md:rounded-bl-lg" src={intro} alt="vlog" />
+        <div className="flex md:w-[30%] flex-col space-y-4 p-8">
           <h2 className="uppercase text-blue-800 mb-2 text-xs font-bold tracking-widest leading-loose after:content after:block after:border-b-2 after:border-blue-700 after:w-8">
             Design Tips
           </h2>
