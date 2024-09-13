@@ -4,6 +4,7 @@ import AboutPage from "./pages/AboutPage";
 import BlogPage from "./pages/BlogPage";
 import PricingPage from "./pages/PricingPage";
 import Contact from "./pages/Contact";
+import HomePage from "./pages/HomePage";
 
 function App() {
   const router = createBrowserRouter([
@@ -13,6 +14,10 @@ function App() {
       children: [
         {
           path: "/",
+          element: <HomePage />,
+        },
+        {
+          path: "/About",
           element: <AboutPage />,
         },
         {

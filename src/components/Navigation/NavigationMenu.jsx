@@ -30,6 +30,15 @@ const NavigationMenu = () => {
                 to="/"
                 end
               >
+                <li>Home</li>
+              </NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? activeClass : navClass
+                }
+                to="/About"
+                end
+              >
                 <li>About</li>
               </NavLink>
               <NavLink
@@ -82,11 +91,12 @@ const NavigationMenu = () => {
           >
             <div className="border bg-white z-50 border-gray-300 p-10 mx-2 flex flex-col text-xl font-medium items-center gap-4">
               <ul className="text-center space-y-5">
-                <li>About</li>
-                <li>Blog</li>
-                <li>Pricing</li>
-                <li>Contact Us</li>
-                <li>Login</li>
+                <Link to="/"><li>Home</li></Link>
+                <Link to="/About"><li>About</li></Link>
+                <Link to="/Blog"><li>Blog</li></Link>
+                <Link to="/Pricing"><li>Pricing</li></Link>
+                <Link to="/Contact"><li>Contact Us</li></Link>
+                <Link to="/login"><li>Login</li></Link>
               </ul>
               <Button>Sign Up</Button>
             </div>
