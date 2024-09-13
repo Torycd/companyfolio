@@ -1,6 +1,6 @@
 // import React from 'react'
 import image from "../../images/heoImg.jpeg";
-import Detail from "../../components/Card/Detail";
+import Detail from "../Card/Detail";
 
 const Hero = () => {
     const btn = "Contact Us";

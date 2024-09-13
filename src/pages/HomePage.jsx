@@ -1,8 +1,11 @@
 // import React from 'react'
+import Animation from "../components/Helpers/Animation"
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <Animation>
+        
+    </Animation>
   )
 }
 
