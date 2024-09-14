@@ -1,16 +1,13 @@
-// import React from 'react';
-import Modal from "react-modal"
+import Modal from "react-modal";
 
-
-const ReactModalAdapter = ({ className, ...props }) => {
-  const contentClassName = `${className}__content`;
-  const overlayClassName = `${className}__overlay`;
+const ReactModalAdapter = ({ className, overlayClassName, ...props }) => {
   return (
     <Modal
-      className={contentClassName}
+      className={className}
       overlayClassName={overlayClassName}
       {...props}
     />
-  )
-}
-export default ReactModalAdapter
+  );
+};
+
+export default ReactModalAdapter;
