@@ -17,9 +17,9 @@ const NavigationMenu = () => {
     <div>
       <div className="">
         <div className="flex justify-between">
-          <div className="font-bold lg:text-xl flex items-center gap-1">
+          <div className="font-bold lg:text-xl flex items-center gap-1 group">
             <div className="bg-blue-800 text-white p-1 rounded-md">Pp</div>
-            <h2 className="">Pen & Pixel</h2>
+            <h2 className="group-hover:text-blue-800">Pen & Pixel</h2>
           </div>
           <div className="hidden lg:flex gap-1 lg:gap-4 text-gray-700">
             <ul className="flex items-center gap-1 lg:gap-2">
