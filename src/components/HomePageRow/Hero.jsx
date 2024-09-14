@@ -25,7 +25,7 @@ const Hero = () => {
         </p>
         <div className="flex">
           <Button>OrderNow</Button>
-          <div className="flex font-medium text-gray-500 transition-all duration-500 hover:text-blue-400">
+          <div className="flex font-medium text-gray-500 transition-all duration-500 hover:text-blue-700">
             <div className="items-center flex px-4">
               <FaRegPlayCircle  size={35} />
             </div>
