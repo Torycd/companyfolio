@@ -10,9 +10,9 @@ const NavigationMenu = () => {
     setNav(!nav);
   };
   const navClass =
-    "transition duration-300 font-medium mr-2 lg:mr-5 border-b-2 border-white   hover:border-gray-700";
+    "transition duration-300 font-medium mr-2 lg:mr-5 border-b-2 border-white hover:text-blue-800   hover:border-blue-800";
   const activeClass =
-    "transition duration-300 font-medium mr-2 lg:mr-5 border-b-2 border-gray-700";
+    "transition duration-300 font-medium mr-2 lg:mr-5 border-b-2 text-blue-800 border-blue-800";
   return (
     <div>
       <div className="">
