@@ -13,7 +13,7 @@ const Vision = () => {
   return (
     <div className="grid md:grid-cols-2 md:gap-20 ">
       <img
-        className="rounded-lg mt-20 sm:mt-0 "
+        className="rounded-[40px]  mt-20 sm:mt-0 "
         src={image}
         alt="Hero"
       />

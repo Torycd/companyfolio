@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaRegPlayCircle } from "react-icons/fa";
-import image from "../../images/heoImg.jpeg";
+import image from "../../images/First.jpg";
 import Button from "../Button/Button";
 import ReactModalAdapter from "../Helpers/ReactModalAdapter";
 import ResponsiveVideoEmbed from "../Helpers/ResponsiveVideoEmbed";
@@ -15,13 +15,14 @@ const Hero = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const toggleModal = () => setModalIsOpen(!modalIsOpen);
-  const watchVideoYoutubeUrl = "https://www.youtube.com/embed/rOnaQMGzOog?si=0Y362Go13jBcthxC";
+  const watchVideoYoutubeUrl =
+    "https://www.youtube.com/embed/rOnaQMGzOog?si=0Y362Go13jBcthxC";
 
   return (
-    <div className="h-screen flex justify-center relative">
+    <div className="h-screen mt-14 md:mt-0 flex justify-center relative">
       <div className="grid md:grid-cols-2 grid-cols-1 md:gap-20">
         <div className="flex flex-col justify-center space-y-4">
-          <div className="text-gray-800 items-center md:text-left z-10 text-center text-nowrap font-bold leading-snug text-xl xl:text-6xl">
+          <div className="text-gray-800 items-center md:text-left z-10 text-center text-nowrap font-bold leading-snug text-3xl xl:text-6xl">
             <h2>Beautiful & Cheap</h2>
             <h2 className="bg-blue-800 p-2 mt-4 text-white transform -skew-x-12 inline-block z-100">
               Simple & Classic.
@@ -31,23 +32,27 @@ const Hero = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <div className="flex">
-            <Button>Order now</Button>
-            <div className="flex font-medium text-gray-500 transition-all duration-500 hover:text-blue-700">
-              <div
-                onClick={toggleModal}
-                className="items-center flex px-4 cursor-pointer"
-              >
-                <FaRegPlayCircle size={35} />
+          <div className="flex justify-center md:justify-start flex-col  space-y-4 md:space-y-0  md:flex-row ">
+            <div className="flex justify-center">
+              <Button>Order now</Button>
+            </div>
+            <div className="flex justify-center self-center">
+              <div className="flex  items-center font-medium text-gray-500 transition-all duration-500 hover:text-blue-700">
+                <div
+                  onClick={toggleModal}
+                  className="items-center flex px-4 cursor-pointer"
+                >
+                  <FaRegPlayCircle size={35} />
+                </div>
+                <p className="text-center justify-center flex flex-col">
+                  Meet the Designers
+                </p>
               </div>
-              <p className="text-center justify-center flex flex-col">
-                Meet the Designers
-              </p>
             </div>
           </div>
         </div>
         <img
-          className="rounded-lg flex self-center order-first md:order-last"
+          className="rounded-[40px] flex self-center -mt-10 md:mt-0"
           src={image}
           alt="Hero"
         />
