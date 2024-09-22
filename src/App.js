@@ -5,6 +5,9 @@ import BlogPage from "./pages/BlogPage";
 import PricingPage from "./pages/PricingPage";
 import Contact from "./pages/Contact";
 import HomePage from "./pages/HomePage";
+import Main from "./components/Menu/Main";
+import Starter from "./components/Menu/Starter";
+import Professional from "./components/Menu/Professional";
 
 function App() {
   const router = createBrowserRouter([
@@ -15,6 +18,20 @@ function App() {
         {
           path: "/",
           element: <HomePage />,
+          children: [
+            {
+              path: "/",
+              element: <Starter />,
+            },
+            {
+              path: "/main",
+              element: <Main />,
+            },
+            {
+              path: "/profesional",
+              element: <Professional />,
+            },
+          ],
         },
         {
           path: "/About",
