@@ -39,9 +39,7 @@ const Menu = () => {
         </div>
       </div>
       {/* content */}
-      <div>
-        <Outlet/>
-      </div>
+      <Outlet />
     </div>
   );
 };

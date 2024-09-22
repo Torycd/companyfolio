@@ -1,8 +1,11 @@
 import React from 'react'
+import Designs from '../Api/Designs'
 
 const Starter = () => {
   return (
-    <div>Starter</div>
+   
+        <Designs type="main" /> 
+
   )
 }
 
