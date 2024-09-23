@@ -39,7 +39,15 @@ const Designs = ({ type }) => {
   return (
     <ul className="grid grid-cols-4 gap-10">
       {designs.map((design) => (
-        <MenuCard key={design.id} designs={design} />
+        <MenuCard
+          id={design.id}
+          name={design.name}
+          votes={design.votes}
+          type={design.type}
+          key={design.id}
+          price={design.price}
+          rating={design.rating}
+        />
       ))}
     </ul>
   );
