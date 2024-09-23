@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
 
+
 const Menu = () => {
   const activeClass =
     " bg-blue-800 hover:bg-blue-700 text-white  px-6 py-2";
