@@ -4,7 +4,7 @@ import Designs from '../Api/Designs'
 const Starter = () => {
   return (
    
-        <Designs type="main" /> 
+        <Designs type="starter" /> 
 
   )
 }

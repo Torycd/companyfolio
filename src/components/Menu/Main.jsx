@@ -3,7 +3,6 @@ import Designs from '../Api/Designs'
 
 const Main = () => {
   return (
-    
         <Designs type="main" /> 
     
   )
