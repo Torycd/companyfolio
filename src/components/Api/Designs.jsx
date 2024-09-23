@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import MenuCard from "../Card/MenuCard";
 
 const Designs = ({ type }) => {
   const [designs, setDesigns] = useState([]);
@@ -39,7 +39,7 @@ const Designs = ({ type }) => {
   return (
     <ul className="grid grid-cols-4 gap-10">
       {designs.map((design) => (
-        <
+        <MenuCard key={design.id} designs={design} />
       ))}
     </ul>
   );

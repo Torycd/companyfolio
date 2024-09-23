@@ -1,4 +1,7 @@
 import React from 'react'
+import image from "../../images/heoImg.jpeg"
+import { FaStar} from "react-icons/fa"
+
 
 const MenuCard = ({design}) => {
   return (
