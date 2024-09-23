@@ -39,6 +39,7 @@ const Designs = ({ type }) => {
     <ul className="grid grid-cols-4 gap-10">
       {designs.map((design) => (
         <li key={design.id}>
+          <img src="" className="" alt={`Item  ${design.id}`} />
           <h3>{design.name}</h3>
           <p>Type: {design.type}</p>
           <p>Price: ₦{design.price.toLocaleString()}</p>

@@ -1,8 +1,10 @@
 import React from 'react'
+import Designs from '../Api/Designs'
+
 
 const Professional = () => {
   return (
-    <div>Professional</div>
+    <Designs type="main" /> 
   )
 }
 
