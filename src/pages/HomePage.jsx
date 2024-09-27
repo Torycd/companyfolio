@@ -3,6 +3,7 @@ import Animation from "../components/Helpers/Animation"
 import Hero from "../components/HomePageRow/Hero"
 import Info from "../components/HomePageRow/Info"
 import Menu from "../components/HomePageRow/Menu"
+import Services from "../components/HomePageRow/Services"
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
         <Hero/>
         <Info/>
         <Menu/>
+        <Services/>
     </Animation>
   )
 }
