@@ -20,7 +20,7 @@ const MenuCard = ({ id, rating, price, votes, name, type }) => {
                   <FaStar className="text-yellow-500" size={15} />
                 </span>
                 <p className="font-bold">{rating}</p>
-                <div className="text-[12px] font-semibold ml-2">({votes})</div>
+                <div className="text-[10px] md:text-[12px] font-semibold ml-2">({votes})</div>
               </div>
             </div>
           </div>
@@ -33,7 +33,7 @@ const MenuCard = ({ id, rating, price, votes, name, type }) => {
         <div className="h-[40%] flex flex-col gap-4 p-3 text-opacity-50">
           <h3 className=" group-hover:text-blue-800 font-bold">{name}</h3>
           <p className="font-semibold">{type}</p>
-          <p className="text-xl font-extrabold">₦{price.toLocaleString()}</p>
+          <p className="md:text-xl font-extrabold">₦{price.toLocaleString()}</p>
         </div>
       </div>
     </li>

@@ -37,7 +37,7 @@ const Designs = ({ type }) => {
   if (designs.length === 0) return <div>No designs found for {type}</div>;
 
   return (
-    <ul className="grid grid-cols-4 gap-10">
+    <ul className="grid grid-cols-1 md:grid-cols-4 gap-10">
       {designs.map((design) => (
         <MenuCard
           id={design.id}

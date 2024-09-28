@@ -2,6 +2,7 @@ import React from "react";
 import { FaArrowRight, FaPeopleArrows, FaPrescription } from "react-icons/fa";
 
 const Services = () => {
+
   const SERVICE = [
     {
       title: "200+ Designers",
@@ -19,7 +20,6 @@ const Services = () => {
       icon: FaPeopleArrows,
     },
   ];
-
   return (
     <div className="flex flex-col items-center justify-center min-h-screen text-center">
       <div className="flex text-gray-800 mb-24 items-center md:text-left z-10 text-center text-nowrap font-bold leading-snug text-3xl xl:text-5xl">
@@ -29,7 +29,7 @@ const Services = () => {
         </h2>
       </div>
 
-      <div className="grid md:grid-cols-3 px-20">
+      <div className="grid md:grid-cols-3 px-32">
         {/* value */}
         {SERVICE.map((stat) => (
           <div
@@ -45,7 +45,7 @@ const Services = () => {
             <p className="text-wrap text-gray-700 font-medium">
               {stat.info}
             </p>
-            <div className="flex text-center justify-center items-center gap-3"><p>Learn More</p><FaArrowRight/></div>
+            <div className="flex text-center text-blue-800  hover:text-blue-900 justify-center items-center gap-3"><p className="font-semibold">Learn More</p><FaArrowRight/></div>
           </div>
         ))}
       </div>
