@@ -1,39 +1,35 @@
 import React from "react";
-import { FaHeadset, FaShieldVirus, FaPeopleArrows } from "react-icons/fa";
+import { FaArrowRight, FaPeopleArrows, FaPrescription } from "react-icons/fa";
 
 const Services = () => {
   const SERVICE = [
     {
-      title: "24/7 Support",
-      info: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport",
-      icon: FaHeadset,
+      title: "200+ Designers",
+      info: "Lorem ipsum donor amet siti ceali placeholder text",
+      icon: FaPeopleArrows,
     },
     {
-      title: "Strong Teams",
-      info: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport",
-      icon: FaShieldVirus,
+      title: "Personal Designers",
+      info: "Lorem ipsum donor amet siti ceali placeholder text",
+      icon: FaPrescription,
     },
     {
-      title: "Customer Satisfaction",
-      info: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport",
+      title: "UI/UX Designs",
+      info: "Lorem ipsum donor amet siti ceali placeholder text",
       icon: FaPeopleArrows,
     },
   ];
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen text-center">
-      <div className="space-y-4 mb-24">
-        <h2 className="text-blue-800 uppercase font-medium">Our Values</h2>
-        <div className="text-gray-800 font-bold text-3xl  md:text-6xl space-y-2">
-          <h2 className="text-wrap">We follow these.</h2>
-        </div>
-        <p className="font-medium md:text-xl text-gray-500 text-wrap">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          <br></br>
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+      <div className="flex text-gray-800 mb-24 items-center md:text-left z-10 text-center text-nowrap font-bold leading-snug text-3xl xl:text-5xl">
+        <h2>Amazing</h2>
+        <h2 className="ml-5 bg-blue-800 p-2 mt-4 text-white transform -skew-x-12 inline-block z-100">
+          Services.
+        </h2>
       </div>
-      <div className="grid md:grid-cols-3 px-10">
+
+      <div className="grid md:grid-cols-3 px-20">
         {/* value */}
         {SERVICE.map((stat) => (
           <div
@@ -46,9 +42,10 @@ const Services = () => {
               </div>
             </div>
             <h2 className="font-bold text-2xl text-gray-700">{stat.title}</h2>
-            <p className="text-wrap text-xl text-gray-700 font-medium">
+            <p className="text-wrap text-gray-700 font-medium">
               {stat.info}
             </p>
+            <div className="flex text-center justify-center items-center gap-3"><p>Learn More</p><FaArrowRight/></div>
           </div>
         ))}
       </div>
