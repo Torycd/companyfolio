@@ -33,7 +33,7 @@ const Services = () => {
         {/* value */}
         {SERVICE.map((stat) => (
           <div
-            className="space-y-4 hover:scale-105 transition-all ease-in-out duration-500"
+            className="space-y-4 hover:scale-105 transition-all ease-in-out duration-500 cursor-pointer"
             key={stat.title}
           >
             <div className="flex justify-center">
