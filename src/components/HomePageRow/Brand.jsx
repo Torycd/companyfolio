@@ -6,7 +6,7 @@ const Brand = () => {
     <div className="grid md:grid-cols-2 md:gap-20 ">
       <div className="space-y-4 mt-5 md:mt-0 text-center md:text-start">
         <h2 className="text-blue-800 uppercase font-medium">A Reputed Brand</h2>
-        <div className="text-gray-800 font-bold flex items-center gap-5  text-3xl xl:text-6xl space-y-2">
+        <div className="text-gray-800 font-bold flex justify-center md:justify-start items-center gap-5  text-3xl xl:text-6xl space-y-2">
           <h2>Why</h2>
           <h2 className="bg-blue-800 p-2 mt-4 text-white transform -skew-x-12 inline-block z-100">
           Choose Us ?

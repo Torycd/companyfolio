@@ -29,7 +29,7 @@ const Services = () => {
         </h2>
       </div>
 
-      <div className="grid gap-4 md:grid-cols-3 px-32">
+      <div className="grid gap-4 md:grid-cols-3 px-5 md:px-32">
         {/* value */}
         {SERVICE.map((stat) => (
           <div
@@ -41,7 +41,7 @@ const Services = () => {
                 {React.createElement(stat.icon, { size: 25 })}
               </div>
             </div>
-            <h2 className="font-bold text-2xl text-gray-700">{stat.title}</h2>
+            <h2 className="font-bold text-xl md:text-2xl text-gray-700">{stat.title}</h2>
             <p className="text-wrap text-gray-700 font-medium">
               {stat.info}
             </p>
