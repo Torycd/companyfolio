@@ -29,7 +29,7 @@ const Services = () => {
         </h2>
       </div>
 
-      <div className="grid md:grid-cols-3 px-32">
+      <div className="grid gap-4 md:grid-cols-3 px-32">
         {/* value */}
         {SERVICE.map((stat) => (
           <div
@@ -45,7 +45,7 @@ const Services = () => {
             <p className="text-wrap text-gray-700 font-medium">
               {stat.info}
             </p>
-            <div className="flex text-center text-blue-800  hover:text-blue-900 justify-center items-center gap-3"><p className="font-semibold">Learn More</p><FaArrowRight/></div>
+            <div className="flex text-center text-blue-800  hover:text-blue-900 justify-center items-center gap-3"><p className="font-semibold text-nowrap">Learn More</p><FaArrowRight/></div>
           </div>
         ))}
       </div>

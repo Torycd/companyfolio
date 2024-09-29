@@ -1,5 +1,6 @@
 // import React from 'react'
 import Animation from "../components/Helpers/Animation"
+import Brand from "../components/HomePageRow/Brand"
 import Hero from "../components/HomePageRow/Hero"
 import Info from "../components/HomePageRow/Info"
 import Menu from "../components/HomePageRow/Menu"
@@ -12,6 +13,7 @@ const HomePage = () => {
         <Info/>
         <Menu/>
         <Services/>
+        <Brand/>
     </Animation>
   )
 }
