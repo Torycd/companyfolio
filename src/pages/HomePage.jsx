@@ -5,6 +5,7 @@ import Hero from "../components/HomePageRow/Hero"
 import Info from "../components/HomePageRow/Info"
 import Menu from "../components/HomePageRow/Menu"
 import Services from "../components/HomePageRow/Services"
+import Testimonial from "../components/HomePageRow/Testimonial"
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
         <Menu/>
         <Services/>
         <Brand/>
+        <Testimonial/>
     </Animation>
   )
 }
